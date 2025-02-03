@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nutrition</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/c2-assets/favicon.png">
     <!-- Sora font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,65 +13,286 @@
     <!-- DaisyUI & Tailwindcss cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .sora-font{
             font-family: "Sora", serif;
         }
     </style>
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              green: '#179800',
+              secondary: '#EFEBE3',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="sora-font">
-    <header>
-        <section class="lg:max-w-screen-xl container mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="font-bold text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                      <li><a>Item 3</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                  </ul>
-                </div>
-                <div class=" mr-2">
-                  <a class="btn">Button</a>
-                </div>
-                <div class="">
-                  <a class="btn">Button</a>
-                </div>
+    <header class="bg-gradient-to-r from-[#fff] to-[#EFEBE3]">
+      <section class="lg:max-w-screen-xl container mx-auto">
+        <!-- Navbar -->
+        <div class="navbar justify-between">
+          <div class="navbar-start w-full sm:w-auto justify-between sm:justify-start flex-row-reverse sm:flex-row">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
               </div>
-        </section>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Item 1</a></li>
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <div class="hidden sm:inline-block">
+            <a class="btn">Button</a>
+          </div>
+        </div>
+
+        <!-- banner -->
+         <section class="mt-8">
+            <div class="lg:max-w-[900px] w-100 mx-auto text-center space-y-5">
+              <h2 class="md:text-6xl text-4xl font-semibold">Freshness<span class="text-green">You Can <br>
+                Count</span> On, Prices You’ll Love!</h2>
+              <p class="text-xl ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="max-w-screen-lg container mx-auto">
+              <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+         </section>
+      </section>
     </header>
-    <main>
+    <main class="">
+      <section class="my-32 mx-auto lg:max-w-screen-xl container">
+        <h1 class="text-4xl font-semibold mb-8 text-green mx-auto ms-3">Serviecs</h1>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-y-8">
+          <!-- card 1 -->
+          <div class="card w-96 md:full bg-secondary shadow-xl mx-auto">
+            <figure class="px-10 pt-10  rounded-full">
+              <img class="bg-white p-5 rounded-full"
+                src="c2-assets/service.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>Perhaps the most famous use in American literature is that by Henry David Thoreau: both my forenoons appear to do, I</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card w-96 md:full bg-secondary shadow-xl mx-auto">
+            <figure class="px-10 pt-10  rounded-full">
+              <img class="bg-white p-5 rounded-full"
+                src="c2-assets/delivery.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Healthy Products </h2>
+              <p>celebrated Hindu culture and identity, asking whether Indians were willing to 'disown their seed, forswear their a mess of pottage'.</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card w-96 md:full bg-secondary shadow-xl mx-auto">
+            <figure class="px-10 pt-10  rounded-full">
+              <img class="bg-white p-5 rounded-full"
+                src="c2-assets/healthy.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services</h2>
+              <p>mess of pottage. I wish to suggest that a man may be very industrious, and yet not spend his time well. There is no more fatal blunderer I</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products -->
+      <section class="sm:p-2 md:p-26 lg:p-36 bg-secondary">
+        <h2 class="text-2xl md:4xl text-green font-semibold md:mb-11">Popular Products</h2>
+        <div class="grid grid-cols-12 gap-6">
+          <!-- Main Card -->
+          <div class=" bg-gradient-to-br from-yellow-400 to-yellow-100  border-2 p-7 rounded-xl col-span-12 md:col-span-4 relative">
+            <h3 class="text-white font-semibold text-3xl md:mt-7 mt-4 mb-3">30% off</h3>
+            <p class="mb-3">Discover a world of treas, toys, and essentials handpicked for.</p>
+            <a href="" class="btn btn-[white] ">Buy Now</a>
+            <img class="absolute right-5 bottom-0" src="c2-assets/vegetable-offer.png" alt="">
+          </div>
+          <!-- Subcards -->
+        <div class="col-span-12 md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-3">
+          <!-- card-1 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class="h-[86px] rounded-xl bg-secondary" src="c2-assets/onion.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Onion 1 KG</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class=" rounded-xl bg-secondary" src="c2-assets/tomato.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Tomato 500 g</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class="h-[86px] rounded-xl bg-secondary" src="c2-assets/potato.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Potato 1 KG</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class=" rounded-xl bg-secondary" src="c2-assets/tomato.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Tomato 500 g</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-5 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class="h-[86px] rounded-xl bg-secondary" src="c2-assets/onion.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Onion 1 KG</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-6 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class=" rounded-xl bg-secondary" src="c2-assets/tomato.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Tomato 500 g</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-7 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class="h-[86px] rounded-xl bg-secondary" src="c2-assets/onion.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Onion 1 KG</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-8 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class="h-[86px] rounded-xl bg-secondary" src="c2-assets/potato.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Potato 1 KG</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- card-9 -->
+          <div class="bg-white border-2 p-3 flex gap-3 rounded-xl justify-start items-center ">
+            <div>
+              <img class="h-[86px] rounded-xl bg-secondary" src="c2-assets/potato.png" alt="">
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-star text-orange-300"></i>
+                <p>4.5</p>
+              </div>
+              <h4 class="text-xl font-medium">Potato 1 KG</h4>
+              <p>$39.99</p>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+      </section>
 
     </main>
     <footer>
