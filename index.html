@@ -33,6 +33,7 @@
               royelblue: '#102861',
               subroyelblue: '#2A4D97',
               subbg: '#EFEBE3',
+            
             }
           }
         }
@@ -109,12 +110,12 @@
 
         <!-- banner -->
          <section class="mt-8">
-            <div class="lg:max-w-[900px] w-100 mx-auto text-center space-y-5">
+            <div class="lg:max-w-[900px] w-100 mx-auto text-center space-y-5 animate-pulse duration-75" style="animation-iteration-count: 1;">
               <h2 class="md:text-6xl text-4xl font-semibold">Freshness<span class="text-green">You Can <br>
                 Count</span> On, Prices You’ll Love!</h2>
-              <p class="text-xl ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+              <p class="text-xl animate-pulse duration-75" style="animation-iteration-count: 2;">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
-            <div class="max-w-screen-lg container mx-auto">
+            <div class="max-w-screen-lg container mx-auto animate-pulse duration-100" style="animation-iteration-count: 1;">
               <img class="w-full" src="c2-assets/hero-vegetables.png" alt="">
             </div>
          </section>
@@ -308,6 +309,62 @@
         </div>
         </div>
       </section>
+      <!-- NEW SECTION  Grow with the best -->
+       <section class="lg:max-w-screen-xl container mx-auto lg:mt-36 mt-20 lg:mb-30 mb-20 ">
+        <h1 class="md:text-4xl text-2xl font-bold text-center">Grow with the best</h1>
+        <p class="text-gray-400 text-center">Vegetarianism is the practice of abstaining from the consumption of meat. </p>
+        <div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-y-5 md:gap-x-2 md:mt-20 items-center ">
+          <!-- No.1 -->
+          <div class="flex md:order-1 order-1 px-5 ">
+            <div class="">
+              <img src="c2-assets/new section assets/lemon-removebg-preview.png" alt="">
+            </div>
+            <div>
+             <h1 class="md:text-6xl text-3xl font-bold">01.</h1>
+              <h3 class="text-green uppercase font-semibold mb-3 mt-3">Always Fresh</h3>
+              <p class="text-gray-500">Maximus, Purus quis tincidunt semper, felis tellu mole site nulla, in finibus erat magna et torto  phasellus a magna lobortis</p>
+            </div>
+          </div>
+          <!-- img -->
+          <div class="col-span-1 row-span-2 md:order-2 order-3 px-5 ">
+            <img class="w-[600px]  p-30" src="c2-assets/new section assets/bag-removebg-preview.png" alt="">
+          </div>
+          <!-- No.2 -->
+          <div class="flex md:order-3 order-2 px-5 ">
+            <div>
+              <img class="w-[61px]" src="c2-assets/new section assets/heart-removebg-preview.png" alt="">
+            </div>
+            <div>
+              <h1 class="md:text-6xl text-3xl font-bold">02.</h1>
+              <h3 class="text-green uppercase font-semibold">Super healthy</h3>
+              <p class="text-gray-500">Maximus, Purus quis tincidunt semper, felis tellu  mole site nulla, in finibus erat magna et torto phasellus a magna lobortis</p>
+            </div>
+          </div>
+          <!-- No.3 -->
+          <div class="flex md:order-4 order-4 px-5">
+            <div>
+              <img class="" src="c2-assets/new section assets/badch-removebg-preview.png" alt="">
+            </div>
+            <div>
+              <h1 class="md:text-6xl text-3xl font-bold">03.</h1>
+              <h3 class="text-green uppercase font-semibold">Premium Quality</h3>
+              <p class="text-gray-500">Maximus, Purus quis tincidunt semper, felis tellu mole site nulla, in finibus erat magna et torto phasellus a magna lobortis</p>
+            </div>
+          </div>
+          <!-- No.4 -->
+          <div class="flex md:order-5 order-5 px-5">
+            <div>
+              <img class="w-[65px]" src="c2-assets/new section assets/heart-removebg-preview.png" alt="">
+            </div>
+            <div>
+             <h1 class="md:text-6xl text-3xl font-bold">04.</h1>
+              <h3 class="text-green uppercase font-semibold">100% natural</h3>
+              <p class="text-gray-500">Maximus, Purus quis tincidunt semper, felis tellu mole site nulla, in finibus erat magna et torto phasellus a magna lobortis</p>
+            </div>
+          </div>
+        
+        </div>
+       </section>
       <!-- Arrival & Offer Section -->
       <section class="md:mt-32 mt-16 mb-5">
         <!-- Section contant holder -->
@@ -354,10 +411,12 @@
         </div>
         <!-- form -->
         <div class="">
-          <h2 class="md:text-4xl text-2xl font-bold  md:font-semibold mb-4 text-green md:text-black">Get Grocery News!</h2>
-          <p class="text-black mb-6 ">Exclusive training tips, ticks, product deals and more.</p>
-          <input class="mb-6 py-4 md:w-3/4 w-full rounded-lg placeholder:ps-5" type="text" placeholder="Enter email..." class="input input-bordered w-full max-w-xs " />
-          <button class="bg-green px-8 py-3 mx-auto text-white block rounded-lg">Subscribe</button>
+          <h2 class=" md:text-start md:text-4xl text-2xl font-bold  md:font-semibold mb-4 text-green md:text-black">Get Grocery News!</h2>
+          <p class="text-black mb-6 md:text-start">Exclusive training tips, ticks, product deals and more.</p>
+          <div class="md:flex md:flex-col">
+            <input class="mb-6 py-4 md:w-3/4 w-full rounded-lg placeholder:ps-5" type="text" placeholder="Enter email..." class="input input-bordered w-full max-w-xs " />
+            <button class="bg-green px-8 py-3 md:ms-0 mx-auto text-white block rounded-lg justify-self-start">Subscribe</button>
+          </div>
         </div>
       </section>
       <section class="md:pt-96 md:pb-36 lg:pt-80 pt-[430px]  pb-20 p-5 mx-auto lg:max-w-screen-xl container" >
